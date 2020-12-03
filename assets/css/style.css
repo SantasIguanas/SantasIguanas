@@ -1,0 +1,439 @@
+@font-face {
+  font-family: Fredericka the Great;
+  src: url(../webfonts/Fredericka_the_Great/FrederickatheGreat-Regular.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	box-sizing: border-box;
+	background-color: #000000;
+	background-repeat: repeat;
+}
+
+header {
+	width: 100%;
+}
+
+footer {
+	width: 100%;
+	padding-bottom: 15px;
+	box-sizing: border-box;
+}
+
+iframe {
+	padding: none;
+}
+
+header a,
+footer a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Fredericka the Great', cursive;
+	height: 31px;
+    display: block;
+    transition: .2s;
+}
+
+header a span,
+footer a span {
+	margin-right: 15px;
+	vertical-align: text-top;
+}
+
+header a img,
+footer a img {
+	max-width: 50px;
+}
+
+h2 {
+	color: #ffffff;
+	font-size: 45px;
+	margin: 0 25px;
+	font-family: 'Fredericka the Great', cursive;
+}
+
+#header-container,
+#footer-container {
+	max-width: 1280px;
+	width: 100%;
+	text-align: center;
+}
+
+#header-container {
+	margin: 15px auto 0 auto;
+}
+
+#footer-container {
+	margin: 0 auto;
+}
+
+#main-container {
+	max-width: 1280px;
+	width: 100%;
+	min-height: 100vh;
+	background-color: #000000;
+	display: block;
+	text-align: center;
+	padding: 25px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 15px;	
+	border-radius: 3px;
+}
+
+#logo {
+	max-width: 420px;
+	margin: 0 auto;
+	display: inline-block;
+	width: 100%;
+}
+
+#menu-button {
+	background-color: #e50000;
+}
+
+#menu-button:hover {
+	background-color: #ff0000;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+}
+
+#location-button {
+	background-color: #007300;
+}
+
+#location-button:hover {
+	background-color: #008000;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #008000, 0 0 40px #008000, 0 0 50px #008000, 0 0 60px #008000, 0 0 70px #008000;
+}
+
+#logo-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#hero-background {
+	padding: 25px 0;
+	background-image: url("../images/grey-background.jpg");
+	background-repeat: repeat;
+  	background-size: 100% auto;
+  	border-radius: 3px;
+}
+
+#location,
+#ubicacion {
+	padding-top: 45px;
+}
+
+#menu {
+	padding-top: 30px;
+}
+
+#menu h2 {
+	margin: 30px 0 15px 0;
+}
+
+#menu h2:first-child {
+	margin: 0 0 15px 0;
+}
+
+.main-buttons {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 45px;
+	margin: 210px 45px 0 45px;
+	padding: 10px 20px;
+	font-family: 'Fredericka the Great', cursive;
+	display: inline-block;
+	height: 45px;
+	border-radius: 3px;
+	transition: all linear .2s;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.language-selector {
+	float: right;
+    margin-right: 15px;
+}
+
+.language-selector:hover {
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+}
+
+.phone {
+	float: left;
+    margin-left: 15px;
+}
+
+.phone:hover {
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+}
+
+.social-icons {
+	width: 30px;
+    display: inline-block;
+}
+
+.instagram-icon:hover {
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #E1306C, 0 0 40px #E1306C, 0 0 50px #E1306C, 0 0 60px #E1306C, 0 0 70px #E1306C;
+}
+
+.facebook-icon:hover {
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4267B2, 0 0 40px #4267B2, 0 0 50px #4267B2, 0 0 60px #4267B2, 0 0 70px #4267B2;
+}
+
+.map {
+	margin-top: 15px;
+}
+
+.menu-section {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 25px 0 25px;
+	background-image: url("../images/grey-background.jpg");
+	background-repeat: repeat;
+  	background-size: 100% auto;
+  	border-radius: 3px;
+}
+
+.menu-item {
+	display: inline-block;
+	background-color: #ffffff;
+	border-radius: 3px;
+	position: relative;
+	height: 200px;
+	width: calc(50% - 15px);
+	margin-bottom: 30px;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.menu-item-image-container {
+	width: 200px;
+	flex-basis: 200px;
+	line-height: 0;
+	position: absolute;
+	right: 0;
+	display: inline-block;
+}
+
+.menu-item-image {
+	height: 100%;
+	width: 100%;
+	border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    object-fit: cover;
+}
+
+.menu-images {
+	max-width: 29%;
+	margin: 15px;
+	border-radius: 3px;
+}
+
+.menu-item-info {
+	display: inline-block;
+	padding: 15px;
+	width: calc(100% - 200px);
+	position: absolute;
+    left: 0;
+    text-align: left;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+.menu-item-info p {
+	font-family: graphik;
+	font-size: 15px;
+	margin-top: 15px;
+	color: #6b6b83;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	line-height: 1.25;
+}
+
+.menu-item-title,
+.menu-price {
+	font-family: Georgia, serif	;
+    font-weight: 400;
+	color: #000066;
+	font-size: 30px;
+}
+
+.menu-price {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media only screen and (max-width: 1200px) {
+	#logo {
+		max-width: 320px;
+	}
+
+	.main-buttons {
+		font-size: 42px;
+		height: 42px;
+		margin: 160px 45px 0 45px;
+    	padding: 10px 12px;
+	}
+
+	.menu-item-title, 
+	.menu-price {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.menu-images {
+    	max-width: 43%;
+	}
+
+	#logo-container {
+		display: block;
+	}
+
+	.main-buttons {
+		display: block;
+    	width: 66%;
+    	font-size: 45px;
+    	height: 45px;
+    	margin: 30px auto;
+	}
+
+	.menu-item {
+		width: 100%;
+	}
+
+	.menu-item-info p {
+	    font-size: 20px;
+	    margin-top: 20px;
+	}
+
+	.menu-item-title, 
+	.menu-price {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 648px) {
+	.menu-item-info p {
+	    font-size: 15px;
+	    margin-top: 15px;
+	}
+
+	.menu-item-title, 
+	.menu-price {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	header a, 
+	footer a {
+		font-size: 27px;
+	}
+
+	.social-icons {
+		float: left;
+	    line-height: 1.5;
+	    margin-left: 15px;
+	}
+
+	.phone {
+		margin: 0 0 5px 0;
+		float: none;
+	}
+
+	.menu-item-image-container {
+	    width: 180px;
+	    flex-basis: 180px;
+	}
+
+	.menu-item-info {
+    	width: calc(100% - 180px); 
+	}
+
+	.menu-item {
+		height: 180px;
+	}
+}
+
+@media only screen and (max-width: 492px) {
+	h2 {
+		font-size: 40px;
+	}
+
+	#main-container {
+		padding: 15px 0;
+	}
+
+	.menu-images {
+	    max-width: 100%;
+	    margin: 15px 0;
+	}
+
+	.mobile-hide {
+		display: none;
+	}
+
+	.menu-item-image-container {
+	    width: 125px;
+	    flex-basis: 125px;
+	}
+
+	.menu-item-info {
+    	width: calc(100% - 125px); 
+	}
+
+	.menu-item {
+		height: 125px;
+		margin-bottom: 20px;
+	}
+
+	.menu-item-info p {
+	    font-size: 12px;
+	    margin-top: 5px;
+	}
+
+	.menu-item-title, 
+	.menu-price {
+	    font-size: 20px;
+	}
+
+	.menu-section {
+		padding: 15px 15px 0 15px;
+	}
+
+	.menu-item-info {
+		padding: 8px;
+	}
+
+	.menu-price {
+    	padding: 8px;
+	}
+
+	.main-buttons {
+		display: block;
+    	width: 66%;
+    	font-size: 40px;
+    	height: 40px;
+    	margin: 20px auto;
+	}
+}
